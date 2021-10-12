@@ -1,4 +1,5 @@
 import { color } from './colors';
+import { FontOptions } from './global';
 
 export function markdown(text: string, options: FontOptions) : string {
     let result = text;

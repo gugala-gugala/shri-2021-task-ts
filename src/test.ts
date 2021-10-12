@@ -1,5 +1,14 @@
+import { Palette } from './global';
 import { style } from './style';
 import { contrast, fontColors } from './model';
+
+// Object.keys FIX
+declare global {
+    interface ObjectConstructor {
+        keys(o: {}): Palette[];
+    }
+}
+
 console.log('colors:');
 console.log(style('red text', { font: 'red' }));
 console.log(style('green text', { font: 'green' }));
@@ -9,7 +18,7 @@ const isColor = (name : string) => fontColors.hasOwnProperty(name);
 const colorList = Object.keys(fontColors).filter(isColor);
 console.log(
     Array.from('Message of all colors')
-        .map((char, i) => {
+        .map((char: string, i) => {
             const font = colorList[i % colorList.length];
             return style(char, { font, background: contrast[font] });
         })

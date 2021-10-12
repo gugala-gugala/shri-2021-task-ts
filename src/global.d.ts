@@ -1,23 +1,13 @@
-interface StyleOptions {
-    font?: string,
-    background?: string,
-    effects?: string[]
-}
+export type Palette = 'black' | 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white';
+export type Effects = 'bright' | 'dim' | 'italic' | 'underscore' | 'blink';
+export type BlackOrWhite = 'black' | 'white';
 
 interface FontOptions {
     bold?: boolean,
     italic?: boolean,
     mono?: boolean,
-    link?: string
-}
-
-interface ColorPull {
-    black: string,
-    red: string,
-    green: string,
-    yellow: string,
-    blue: string,
-    magenta: string,
-    cyan: string,
-    white: string
+    link?: string,
+    font?: Palette,
+    background?: Palette,
+    effects?: [Effects]
 }

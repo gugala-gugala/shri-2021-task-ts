@@ -1,7 +1,8 @@
 import { color } from './colors';
+import { FontOptions } from './global';
 import { markdown } from './md';
 
-export function style(text: string, options: StyleOptions | FontOptions) {
+export function style(text: string, options: FontOptions) {
     if (text.length === 0) {
         return text;
     }
