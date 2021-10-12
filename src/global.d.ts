@@ -21,5 +21,3 @@ interface ColorPull {
     cyan: string,
     white: string
 }
-
-type ColorPull2 = 'black' | 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white';

@@ -1,4 +1,4 @@
-export const Reset = '\x1b[0m';
+export const Reset : string = '\x1b[0m';
 export const effects: { [key: string]: string } = {
     bright: '\x1b[1m',
     dim: '\x1b[2m',
