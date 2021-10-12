@@ -1,5 +1,15 @@
 import { color } from './colors';
-import { FontOptions } from './global';
+import { Effects, Palette } from './model';
+
+export interface FontOptions {
+    bold?: boolean;
+    italic?: boolean;
+    mono?: boolean;
+    link?: string;
+    font?: Palette;
+    background?: Palette;
+    effects?: [Effects];
+}
 
 export function markdown(text: string, options: FontOptions): string {
     let result = text;

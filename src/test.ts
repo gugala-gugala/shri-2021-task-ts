@@ -1,6 +1,5 @@
-import { Palette } from './global';
 import { style } from './style';
-import { contrast, fontColors } from './model';
+import { contrast, fontColors, Palette } from './model';
 
 // Object.keys FIX
 declare global {

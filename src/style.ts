@@ -1,6 +1,5 @@
 import { color } from './colors';
-import { FontOptions } from './global';
-import { markdown } from './md';
+import { markdown, FontOptions } from './md';
 
 export function style(text: string, options: FontOptions) {
     if (text.length === 0) {

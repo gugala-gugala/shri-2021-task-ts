@@ -1,5 +1,5 @@
-import { Effects, FontOptions, Palette } from './global';
-import { backgroundColors, effects, fontColors, Reset } from './model';
+import { FontOptions } from './md';
+import { backgroundColors, Effects, effects, fontColors, Palette, Reset } from './model';
 function addColor(text: string, color: Palette, isBackground: boolean = false): string {
     if (isBackground) {
         return text + backgroundColors[color];

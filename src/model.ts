@@ -1,4 +1,6 @@
-import { BlackOrWhite, Effects, Palette } from './global';
+export type Palette = 'black' | 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white';
+export type Effects = 'bright' | 'dim' | 'italic' | 'underscore' | 'blink';
+export type BlackOrWhite = 'black' | 'white';
 
 export const Reset: string = '\x1b[0m';
 export const effects: { [key in Effects]: string } = {
