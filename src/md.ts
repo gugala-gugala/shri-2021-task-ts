@@ -1,7 +1,7 @@
 import { color } from './colors';
 import { FontOptions } from './global';
 
-export function markdown(text: string, options: FontOptions) : string {
+export function markdown(text: string, options: FontOptions): string {
     let result = text;
     if (options) {
         if (options.bold) {

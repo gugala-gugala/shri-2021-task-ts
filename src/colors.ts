@@ -1,15 +1,15 @@
 import { Effects, FontOptions, Palette } from './global';
 import { backgroundColors, effects, fontColors, Reset } from './model';
-function addColor(text: string, color: Palette, isBackground: boolean = false) : string {
+function addColor(text: string, color: Palette, isBackground: boolean = false): string {
     if (isBackground) {
         return text + backgroundColors[color];
     }
     return text + fontColors[color];
 }
-function getEffects(effectList: [Effects]) : string {
+function getEffects(effectList: [Effects]): string {
     return effectList.map(effect => effects[effect]).join('');
 }
-export function color(text: string, options: FontOptions) : string {
+export function color(text: string, options: FontOptions): string {
     const preparedText = text.replace(/ё/g, 'е');
     let result = '';
     if (options) {
